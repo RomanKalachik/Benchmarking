@@ -40,7 +40,8 @@ namespace WpfApp14
             return BenchmarkRunner.Run<Test>(config);
         }
         void MainWindow_Loaded(object sender, RoutedEventArgs e) {
-            StartTest();
+            //StartTest();
+            var res  = Microsoft.Diagnostics.Tracing.Session.TraceEventProfileSources.GetInfo();
         }
     }
 
